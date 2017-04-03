@@ -1,22 +1,22 @@
-This is a patatap.com clone and for practice purpose ONLY.
+This is a patatap.com clone for practice purpose ONLY.
 
-Press any key from A-Z to enjoy different sounds and the amazing visual effects that is provided by paper.js.
+Press any key from A-Z to enjoy different sounds and the amazing visual effects that are provided by paper.js.
 
 It's a clone of patatap website. It is built with howler.js and paper.js.
 
-Some notes that I taken while I was built this web sites:
+Some notes that I have taken while I was built this web sites:
 
 Query Selector
 
-In place of common selectors like class, id or attribute we can use document.querySelector or document.querySelectorAll for substitution. The differences lie in:
+In place of common selectors like class, id or attribute we can use document.querySelector or document.querySelectorAll as the substitution. The differences lie in:
 
   document.querySelector returns the first matched element
   document.querySelectorAll returns all matched elements as NodeList. It can be converted to Array using          Array.prototype.slice.call(document.querySelectorAll(selector));
 
-If there are no elements matched, jQuery and document.querySelectorAll will return [] document.querySelector will return null.
+If there are no elements matched, jQuery and document.querySelectorAll will return [] document.querySelector and null respectively.
 
 Notice: document.querySelector and document.querySelectorAll are quite SLOW  use document.getElementById, document.getElementsByClassName or document.getElementsByTagName if you want to get a performance bonus.
-
+```
 1.0 Query by selector
 
 // jQuery
@@ -199,3 +199,4 @@ el.getAttribute('data-foo');
 
 // Native (use `dataset` if only need to support IE 11+)
 el.dataset['foo'];
+```
